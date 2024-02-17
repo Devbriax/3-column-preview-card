@@ -1,0 +1,113 @@
+:root {
+  /* Screen-sizes */
+  --Mobile: (width:375px);
+  --Desktop: (width:1440px);
+  /*Colors*/
+  /*Primary*/
+  --Brightorange: hsl(31, 77%, 52%);
+  --Darkcyan: hsl(184, 100%, 22%);
+  --Verydarkcyan: hsl(179, 100%, 13%);
+  /* Neutral */
+  ---Transparentwhite: hsla(0, 0%, 100%, 0.75);
+  /* background,headings,buttons */
+  ---Verylightgray: hsl(0, 0%, 95%);
+  /* Fonts*/
+  --LexendDeca:('https: //fonts.google.com/specimen/Lexend+Deca')
+        - Weights: 400;
+  --BigShouldersDisplay:('https: //fonts.google.com/specimen/Big+Shoulders+Display')
+        - Weights: 700;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background: #ffffff;
+}
+
+main {
+  display: flex;
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  width: 70%;
+  border-radius: 7px;
+  height: 60%;
+  align-content: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(---Verylightgray);
+  box-shadow: 0px -1px 20px 10px rgb(0 0 0 / 27%);
+  font-family: var("--BigShoulders");
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 40px;
+  height: 100%;
+  border-radius: 5px 0 0 5px;
+  padding: 6px 30px;
+  background: var(--Brightorange);
+}
+
+.card:nth-child(2){
+  background: var(--Darkcyan);
+    border-radius: 0 0 0 0;
+}
+
+.card:nth-child(3){
+  background:var(--Verydarkcyan);
+  border-radius:  0 5px 5px 0 ;
+}
+
+.card h2 {
+  color: var(---Verylightgray);
+  font-size: 26px;
+  font-family: var(--LexendDeca);
+  font-weight: 400;
+}
+
+.card p {
+  width: 100%;
+  color: #e5e5e599;
+  line-height: 18px;
+}
+
+button{
+  width: 120px !important;
+  height: 50px !important;
+  border: none !important;
+  border-radius: 25px;
+  cursor: pointer;
+  align-self: center !important;
+  color: var(--Brightorange);
+  font-size: 14px;
+}
+
+.orange{
+  color: var(--Brightorange);
+}
+
+.light-green{
+  color: var(--Darkcyan);
+}
+
+.dark-green{
+  color: var(--Verydarkcyan);
+}
+
+/* Mobile */
+@media screen and (width:375px) {
+ 
+}
+/* Des*/
+@media screen and  (width:1440px) {
+  
+}
