@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://)
-- Live Site URL: (https://)
+- Solution URL: 
+- Live Site URL: (https://devbriax.github.io/3-column-preview-card/)
 
 ## My process
 
