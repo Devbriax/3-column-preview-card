@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
 :root {
   /* Screen-sizes */
   --Mobile: (width:375px);
@@ -12,9 +14,10 @@
   /* background,headings,buttons */
   ---Verylightgray: hsl(0, 0%, 95%);
   /* Fonts*/
-  --LexendDeca:('https: //fonts.google.com/specimen/Lexend+Deca')
+  --Lexend:
+  ('https://fonts.google.com/specimen/Lexend+Deca')
         - Weights: 400;
-  --BigShouldersDisplay:('https: //fonts.google.com/specimen/Big+Shoulders+Display')
+  --BigShouldersDisplay:('https://fonts.google.com/specimen/Big+Shoulders+Display')
         - Weights: 700;
 }
 
@@ -41,7 +44,8 @@ main {
   align-items: center;
   background-color: var(---Verylightgray);
   box-shadow: 0px -1px 20px 10px rgb(0 0 0 / 27%);
-  font-family: var("--BigShoulders");
+  font-family: 'Lexend', monospace;
+  font-weight: 400;
 }
 
 .card {
@@ -70,7 +74,7 @@ main {
 .card h2 {
   color: var(---Verylightgray);
   font-size: 26px;
-  font-family: var(--LexendDeca);
+  font-family: var(--Lexend);
   font-weight: 400;
 }
 
@@ -89,6 +93,7 @@ button{
   align-self: center !important;
   color: var(--Brightorange);
   font-size: 14px;
+  font-family: var(--Lexend);
 }
 
 .orange{
