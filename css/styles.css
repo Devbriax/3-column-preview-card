@@ -2,23 +2,21 @@
 
 :root {
   /* Screen-sizes */
-  --Mobile: (width:375px);
-  --Desktop: (width:1440px);
+  --Mobile: 375px;
+  --Desktop: 1440px;
+
   /*Colors*/
-  /*Primary*/
   --Brightorange: hsl(31, 77%, 52%);
   --Darkcyan: hsl(184, 100%, 22%);
   --Verydarkcyan: hsl(179, 100%, 13%);
+
   /* Neutral */
-  ---Transparentwhite: hsla(0, 0%, 100%, 0.75);
+  --Transparentwhite: hsla(0, 0%, 100%, 0.75);
   /* background,headings,buttons */
-  ---Verylightgray: hsl(0, 0%, 95%);
+  --Verylightgray: hsl(0, 0%, 95%);
+
   /* Fonts*/
-  --Lexend:
-  ('https://fonts.google.com/specimen/Lexend+Deca')
-        - Weights: 400;
-  --BigShouldersDisplay:('https://fonts.google.com/specimen/Big+Shoulders+Display')
-        - Weights: 700;
+  --Lexend: 'Lexend', monospace;
 }
 
 * {
@@ -31,66 +29,61 @@ body{
 }
 
 main {
-  display: flex;
-  position: absolute;
-  top: 20%;
-  left: 15%;
-  width: 70%;
-  border-radius: 7px;
-  height: 60%;
-  align-content: center;
-  flex-wrap: nowrap;
+ display: flex;
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
   justify-content: center;
   align-items: center;
-  background-color: var(---Verylightgray);
-  box-shadow: 0px -1px 20px 10px rgb(0 0 0 / 27%);
-  font-family: 'Lexend', monospace;
-  font-weight: 400;
+  width: 100%;
+  max-width: 1200px; /* Limit max width */
+  margin: 0 auto; /* Center the main container */
+  padding: 20px; /* Add some padding */
+}
+
+#card-container {
+  padding-top: 15%;
+  font-family: var(--Lexend);
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  align-content: flex-start;
-  justify-content: center;
   align-items: flex-start;
-  row-gap: 40px;
-  height: 100%;
-  border-radius: 5px 0 0 5px;
-  padding: 6px 30px;
+  justify-content: center;
+  row-gap: 20px;
+  width: 100%; /* Full width on small screens */
+  max-width: 300px; /* Limit card width */
+  border-radius: 5px;
+  padding: 20px;
   background: var(--Brightorange);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px; /* Add margin between cards */
 }
 
-.card:nth-child(2){
+.card:nth-child(2) {
   background: var(--Darkcyan);
-    border-radius: 0 0 0 0;
 }
 
-.card:nth-child(3){
-  background:var(--Verydarkcyan);
-  border-radius:  0 5px 5px 0 ;
+.card:nth-child(3) {
+  background: var(--Verydarkcyan);
 }
 
 .card h2 {
-  color: var(---Verylightgray);
-  font-size: 26px;
-  font-family: var(--Lexend);
-  font-weight: 400;
+  color: var(--Verylightgray);
+  font-size: 24px;
+  text-transform: uppercase;
 }
 
 .card p {
-  width: 100%;
   color: #e5e5e599;
   line-height: 18px;
 }
 
 button{
-  width: 120px !important;
-  height: 50px !important;
-  border: none !important;
+  width: 120px;
+  height: 50px;
+  border: none;
   border-radius: 25px;
   cursor: pointer;
-  align-self: center !important;
   color: var(--Brightorange);
   font-size: 14px;
   font-family: var(--Lexend);
@@ -108,11 +101,23 @@ button{
   color: var(--Verydarkcyan);
 }
 
-/* Mobile */
-@media screen and (width:375px) {
- 
+/* Responsive Styles */
+@media screen and (max-width:768px) {
+ .card {
+    max-width: 90%; /* Allow cards to take more width on smaller screens */
+  }
 }
 /*Desktop*/
-@media screen and  (width:1440px) {
-  
+@media screen and  (max-width: 480px) {
+   .card {
+    max-width: 100%; /* Full width on very small screens */
+  }
+
+  .card h2 {
+    font-size: 20px; /* Smaller font size for headings */
+  }
+
+  button {
+    width: 100%; /* Full width buttons on small screens */
+  }
 }

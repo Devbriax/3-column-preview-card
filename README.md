@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: 
+- Solution URL: ()
 - Live Site URL: (https://devbriax.github.io/3-column-preview-card/)
 
 ## My process
@@ -41,19 +41,23 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 ### What I learned
 
 - How to properly use css flex attributes along with the css grid.
+- Proper use of media queries. 
 
 ### Continued development
 
-- The mobile view, still needs attention.
-- Since the respective breakpoints at which the site starts breaking.
+- N/A
 
 ### Useful resources
+
+- DevDocs:(https://devdocs.io/)
+- MDN:(https://developer.mozilla.org/en-US/)
+- W3schools:(https://www.w3schools.com/)
+- Web.dev:(https://web.dev/)
 
 ## Author
 
